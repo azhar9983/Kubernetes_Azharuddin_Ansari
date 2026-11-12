@@ -1,0 +1,6 @@
+Objective: Deploy a full-stack application in a local Kubernetes cluster using Minikube.
+
+Task
+Deploy your previous assignment's Flask frontend and Express backend in a Kubernetes cluster locally using minikube.
+
+Tip: You will need to containerize both applications, write Kubernetes manifests (Deployment and Service YAML files) for each, apply them to the cluster, and verify the pods and services are running.
