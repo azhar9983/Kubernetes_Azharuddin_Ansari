@@ -4,3 +4,13 @@ Task
 Deploy your previous assignment's Flask frontend and Express backend in a Kubernetes cluster locally using minikube.
 
 Tip: You will need to containerize both applications, write Kubernetes manifests (Deployment and Service YAML files) for each, apply them to the cluster, and verify the pods and services are running.
+
+
+##############################
+
+alias kubectl="minikube kubectl -- "
+
+kubectl port-forward svc/backend 5000:5000
+
+kubectl port-forward svc/frontend 3000:3000
+
