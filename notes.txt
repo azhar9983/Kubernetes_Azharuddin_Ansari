@@ -8,7 +8,11 @@ Tip: You will need to containerize both applications, write Kubernetes manifests
 
 ##############################
 
+minikube start
+
 alias kubectl="minikube kubectl -- "
+
+kubectl apply -f ./flask-node-app/.
 
 kubectl port-forward svc/backend 5000:5000
 
